@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Calibri, sans-serif; }
+
+  .section-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #1F3D6B;
+    margin-bottom: 10px;
+  }
+
+  .kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+
+  .kpi-card {
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+  }
+
+  .kpi-top {
+    padding: 10px 12px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+
+  .kpi-top .label {
+    font-size: 10px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .kpi-top .period {
+    font-size: 9px;
+    font-style: italic;
+    color: rgba(255,255,255,0.75);
+  }
+
+  .kpi-bottom {
+    padding: 10px 12px;
+    background: #f0f4fb;
+    text-align: center;
+  }
+
+  .kpi-bottom .value {
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  /* individual card colours */
+  .card-peak    .kpi-top { background: #2E5FA3; }
+  .card-peak    .kpi-bottom .value { color: #2E5FA3; }
+
+  .card-latest  .kpi-top { background: #1F3D6B; }
+  .card-latest  .kpi-bottom .value { color: #1F3D6B; }
+
+  .card-low     .kpi-top { background: #8B1A1A; }
+  .card-low     .kpi-bottom { background: #fdf0f0; }
+  .card-low     .kpi-bottom .value { color: #8B1A1A; }
+
+  .card-gain    .kpi-top { background: #1A5C3A; }
+  .card-gain    .kpi-bottom { background: #f0faf4; }
+  .card-gain    .kpi-bottom .value { color: #1A5C3A; }
+</style>
+</head>
+<body>
+  <div class="section-title">Key Performance Indicators</div>
+  <div class="kpi-grid">
+
+    <div class="kpi-card card-peak">
+      <div class="kpi-top">
+        <span class="label">Peak Quarter</span>
+        <span class="period">Q4 · Year 2</span>
+      </div>
+      <div class="kpi-bottom">
+        <span class="value">8,033 M USD</span>
+      </div>
+    </div>
+
+    <div class="kpi-card card-latest">
+      <div class="kpi-top">
+        <span class="label">Latest Quarter</span>
+        <span class="period">Q4 · Year 4</span>
+      </div>
+      <div class="kpi-bottom">
+        <span class="value">3,782 M USD</span>
+      </div>
+    </div>
+
+    <div class="kpi-card card-low">
+      <div class="kpi-top">
+        <span class="label">Period Low</span>
+        <span class="period">Q2 · Year 4</span>
+      </div>
+      <div class="kpi-bottom">
+        <span class="value">2,881 M USD</span>
+      </div>
+    </div>
+
+    <div class="kpi-card card-gain">
+      <div class="kpi-top">
+        <span class="label">Best YoY Gain</span>
+        <span class="period">Q1 · Year 4</span>
+      </div>
+      <div class="kpi-bottom">
+        <span class="value">+20.2%</span>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
