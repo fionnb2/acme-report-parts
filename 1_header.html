@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Calibri, sans-serif; }
+
+  .header {
+    display: flex;
+    align-items: stretch;
+    border-radius: 6px;
+    overflow: hidden;
+    min-height: 90px;
+  }
+
+  .header-left {
+    background: #1F3D6B;
+    flex: 1;
+    padding: 18px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .header-left .company {
+    font-size: 22px;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 1px;
+  }
+
+  .header-left .subtitle {
+    font-size: 11px;
+    color: #ADC8EC;
+    font-style: italic;
+    margin-top: 4px;
+  }
+
+  .header-right {
+    background: #2E5FA3;
+    min-width: 200px;
+    padding: 18px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: right;
+  }
+
+  .header-right .period {
+    font-size: 11px;
+    font-weight: 700;
+    color: #ffffff;
+  }
+
+  .header-right .as-of {
+    font-size: 10px;
+    color: #ADC8EC;
+    margin-top: 3px;
+  }
+
+  .header-right .confidential {
+    font-size: 9px;
+    font-weight: 700;
+    color: #FFD700;
+    letter-spacing: 1px;
+    margin-top: 6px;
+    background: rgba(0,0,0,0.2);
+    padding: 2px 8px;
+    border-radius: 3px;
+  }
+</style>
+</head>
+<body>
+  <div class="header">
+    <div class="header-left">
+      <div class="company">ACME CORPORATION</div>
+      <div class="subtitle">Internal Financial Report &nbsp;|&nbsp; Net Revenue Analysis</div>
+    </div>
+    <div class="header-right">
+      <div class="period">Fiscal Year Overview</div>
+      <div class="as-of">As of Q4 — Current Period</div>
+      <div class="confidential">CONFIDENTIAL</div>
+    </div>
+  </div>
+</body>
+</html>
